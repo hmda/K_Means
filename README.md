@@ -5,11 +5,11 @@ K_Means
 Input: Số cụm k và các trọng tâm cụm {mj}kj=1.
 Output: Các cụm C[i] (1  ≤  i  ≤  k) và hàm tiêu chuẩn E đạt giá trị tối thiểu.
 Begin
-Bước 1: Khởi tạo
+- Bước 1: Khởi tạo
 Chọn k trọng tâm {mj}kj=1 ban đầu trong không gian Rd (d là số chiều của dữ liệu). Việc lựa chọn này có thể là ngẫu nhiên hoặc theo kinh nghiệm.
-Bước 2: Tính toán khoảng cách
+- Bước 2: Tính toán khoảng cách
 Đối với mỗi điểm Xi  (1 ≤ i ≤ n), tính toán khoảng cách của nó tới mỗi trọng tâm mj (1 ≤ j ≤  k). Sau đó tìm trọng tâm gần nhất đối với mỗi điểm.
-Bước 3: Cập nhật lại trọng tâm
+- Bước 3: Cập nhật lại trọng tâm
 Đối với mỗi 1 ≤ j ≤ k, cập nhật trọng tâm cụm mj  bằng cách xác định trung bình cộng các vectơ đối tượng dữ liệu.
 Điều kiện dừng:
 Lặp lại các bước 2 và 3 cho đến khi các trọng tâm của cụm không thay đổi.
